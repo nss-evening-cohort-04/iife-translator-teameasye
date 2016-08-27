@@ -5,7 +5,7 @@ var frenchTranslator = {
        "happy": "",
        "birthday": "joyeux",
        "to": "",
-       "anniversaire": 
+       "you": "anniversaire"
    };
 
    language.getFrench = function(addedLanguage) {

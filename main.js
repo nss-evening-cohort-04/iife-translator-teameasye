@@ -1,9 +1,10 @@
 var input = document.getElementById("userinput");
 var language = document.getElementById("language-selector");
 var output = document.getElementById("useroutput");
+var button = document.getElementById("submit");
 
-language.addEventListener("change", function(event) {
-    selectedLanguage = event.target.value;
+button.addEventListener("click", function(event) {
+    selectedLanguage = document.getElementById("language-selector").value
     var stringToSplit = input.value;
     var messageToPrint = "";
     stringToSplit = stringToSplit.split(" ");
@@ -16,6 +17,8 @@ language.addEventListener("change", function(event) {
       messageToPrint = LanguageTranslator.getFrench(stringToSplit);
     } else if (selectedLanguage === "spanish") {
       messageToPrint = LanguageTranslator.getSpanish(stringToSplit);
+    } else if (selectedLanguage === "chooselanguage") {
+      alert("Please select a language!");
     }
     output.value = messageToPrint;
 
