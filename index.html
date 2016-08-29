@@ -7,10 +7,11 @@
 </head>
 
 <body>
+  <header><img src="world.png">
+  </header>
 <h1>iife Translator</h1>
-<p>type something in</p>
-<textarea id="userinput" placeholder="Translate something...."></textarea><br>
-
+<textarea id="userinput" placeholder="type something to translate...."  onfocus="this.placeholder = ''"></textarea><br>
+<p>(hint: type Happy Birthday to you)</p>
 <select id="language-selector">
  <option title='language' value='chooselanguage'>Choose a language</option>
  <option title='language' value='french'>French</option>
@@ -27,9 +28,7 @@
 <script type="text/javascript" src="German.js"></script>
 <script type="text/javascript" src="Spanish.js"></script>
 <script type="text/javascript" src="Italian.js" ></script>
- <p>thanks for playing</p>
-<footer>
- <img src="world.png" alt=" ">
-</footer>
+
+<footer><i>thanks for playing</i></footer>
 </body>
 </html>
