@@ -2,10 +2,10 @@ var LanguageTranslator = (function(language) {
 var translatedFrench = [];
    // Private variable to store the different meat prices
 var frenchTranslator = {
-       "happy": "",
-       "birthday": "joyeux",
+       "happy": "joyeux",
+       "birthday": "anniversaire",
        "to": "",
-       "you": "anniversaire"
+       "you": "",
    };
 
    language.getFrench = function(addedLanguage) {
